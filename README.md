@@ -54,3 +54,12 @@ This source ZIP is **not** a compiled drag-and-drop deploy folder. Upload it to 
 **Security warning:** All users of this prototype can access the simulated Admin controls. Do not enter personal or sensitive data. Do not use this as a production commerce backend.
 
 **Build verification:** This environment could not download npm dependencies, so a complete build test has not been performed. Check the Netlify build log and report errors before relying on the deployment.
+
+
+## v0.3 updates
+- CSV bulk product import (up to 1,000 rows), CSV export
+- Duplicate a product (starts with zero stock)
+- Admin product search and low-stock filter (10 or fewer)
+- Preserves the existing IndexedDB database and stored records from v0.2
+
+**Important:** This is still a local-browser prototype. Before updating, download a full JSON backup from the admin page. CSV export excludes product images; use the JSON backup to preserve images. There is no authentication or cloud sync yet.
